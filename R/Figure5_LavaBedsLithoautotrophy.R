@@ -147,5 +147,3 @@ ggarrange(p3,
           #p1 + theme(axis.text = element_blank(), 
           #           axis.title = element_blank()), 
           nrow = 2, common.legend = T, align = "hv", heights = c(4,1))
-
-

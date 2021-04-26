@@ -4,6 +4,7 @@ ipl_irms <- read_csv("../data/irms_samples_tank.csv") # raw tank values for samp
 irms_stds <- read_csv("../data/irms_standards.csv") 
 ipl_ug_g_tle <- read_csv("../data/ipl_abun_table_ug_g_tle.csv")
 sample_metadata <- read_csv("../data/sample_metadata.csv")
+ipl_metadata <- read_csv("../data/ipl_metadata.csv")
 
 # Convert sample tank d13C_IPL values to VPDB scale
 
@@ -123,6 +124,7 @@ ipl_ug_g_tle_long <- ipl_ug_g_tle %>%
 yield_plus_d13C <- left_join(ipl_vpdb_avg, tle_long_irms) %>%
   left_join(sample_metadata) %>%
   left_join(ipl_ug_g_tle_long) %>%
+  #left_join(ipl_metadata, by = c("ipl" = "core_lipid")) %>%
   filter(!is.na(sample_name))
 
 # export yield_plus_d13C for use in Figure 5
@@ -149,11 +151,12 @@ point_color <- c("#8F2D56", #dic
 
 # plot
 yield_plus_d13C %>% 
+  mutate(d13C_ipl_corr = ((1/(carbon_number+methanol_C_count))*(-38.9)) + (1-(1/(carbon_number+1)))*avg_d13C_vpdb_pred) %>%
   filter(!sample_color %in% c("blue-green")) %>%
   ggplot() +
   geom_violin(data = sample_metadata, aes(d13C_toc, factor(sample_class2, levels = stype_order), 
                                           alpha = 0.8, fill = "TOC"), trim = T) +
-  geom_violin(aes(avg_d13C_vpdb_pred, factor(sample_class2, levels = stype_order), 
+  geom_violin(aes(d13C_ipl_corr, factor(sample_class2, levels = stype_order), 
                   alpha = 0.8, fill = "IPL"), trim = T) +
   geom_rect(aes(xmin = -29.79-2.04, xmax = -29.79+2.04, 
                 ymin = 0, ymax = Inf, 

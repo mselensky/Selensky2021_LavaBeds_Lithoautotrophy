@@ -69,7 +69,9 @@ soil_d13Corg <- yield_plus_d13C %>%
             stdv_d13C_toc_soil = sd(d13C_toc, na.rm = TRUE))
 
 model_data <- yield_plus_d13C %>%
-  select(sample_fraction_coded, sample_name, sample_class2, ipl, avg_d13C_vpdb_pred, sd_d13C_vpdb_pred, model_rmse, se_reported)
+  left_join(ipl_metadata, by = c("ipl" = "core_lipid")) %>%
+  mutate(d13C_ipl_corr = ((1/(carbon_number+methanol_C_count))*(-38.9)) + (1-(1/(carbon_number+1)))*avg_d13C_vpdb_pred) %>%
+  distinct(sample_fraction_coded, sample_name, sample_class2, ipl, avg_d13C_vpdb_pred, d13C_ipl_corr, sd_d13C_vpdb_pred, model_rmse, se_reported)
 
 # Assuming Calvin cycle-based fixation,
 # (dIPL - dS) / (dL - dS) = fL
@@ -80,8 +82,8 @@ model_data <- yield_plus_d13C %>%
 
 model_output <- model_data %>%
   mutate(fL = if_else(sample_class2 == "surface soil", 
-                      (avg_d13C_vpdb_pred - soil_d13Corg$mean_d13C_toc_soil) / ((soil_d13Corg$mean_d13C_toc_soil-20) - soil_d13Corg$mean_d13C_toc_soil),
-                      (avg_d13C_vpdb_pred - mean_drip_doc_d13C) / ((mean_drip_doc_d13C-20) - mean_drip_doc_d13C)))
+                      (d13C_ipl_corr - soil_d13Corg$mean_d13C_toc_soil) / ((soil_d13Corg$mean_d13C_toc_soil-20) - soil_d13Corg$mean_d13C_toc_soil),
+                      (d13C_ipl_corr - mean_drip_doc_d13C) / ((mean_drip_doc_d13C-20) - mean_drip_doc_d13C)))
 
 model_output$sample_class2 <- factor(model_output$sample_class2, levels = 
                                        c("surface soil", 
