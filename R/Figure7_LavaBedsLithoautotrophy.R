@@ -26,6 +26,7 @@ pacman::p_load(tidyverse, ggridges)
 aqueous <- read_csv("../data/aqueous_data.csv")
 yield_plus_d13C <- read_csv("../data/ipl_yield_plus_d13C.csv") %>% # from Figure4_LavaBedsLithoautotrophy.R
   filter(!sample_fraction_coded %in% c("L853-20180801-F-01-P3", "L853-20180801-F-01-P4"))
+ipl_metadata <- read_csv("../data/ipl_metadata.csv")
 
 # define colors for samples 
 sample_class2_colorz <- c("tan biofilm" = "#17174a", 
@@ -107,14 +108,15 @@ fL_binned <- model_output %>%
             fL_mean_bin = mean(fL),
             fL_sd_bin = sd(fL))
 
-# filter for IPLs discussed in the text
+# filter for IPLs specifically discussed in the text for Figure 7
 text_ipls <- c("n-C18:0", "n-C22:0", "n-C16:0",
                "i-C16:0", "i-C15:0", "10_14_DiMe_C17", "C16:1 w7 (trans)", "C17:1 w8 (trans)", #"i-C18:0",
                "C16:1 w7 (cis)")
 
 plot <- model_output %>% 
   filter(se_reported < 0.3,
-         ipl %in% text_ipls) %>%
+         #ipl %in% text_ipls
+         ) %>%
   group_by(sample_class2) %>%
   ggplot() +
   geom_density_ridges(aes(fL, 
@@ -122,8 +124,15 @@ plot <- model_output %>%
                           fill = paste(sample_class2))) +
   geom_point(aes(fL,
                  reorder(ipl, fL, mean), 
-                 color = sample_class2)) +
-  #shape = as.character(ipl_cluster))) +
+                 color = sample_class2, 
+                 text = paste("<br>",
+                              "IPL: ", ipl,
+                              "<br>",
+                              "fL: ", round(fL, 3),
+                              "<br>",
+                              "sample type: ", sample_class2,
+                              "<br>",
+                              "sample name: ", sample_name))) +
   scale_fill_manual(values = sample_class2_colorz) +
   scale_color_manual(values = sample_class2_colorz) +
   theme_bw() +
@@ -139,6 +148,42 @@ model_table <- model_output %>%
   select(sample_fraction_coded, ipl, fL) %>%
   pivot_wider(names_from = "ipl", values_from = "fL")
 #write_csv(model_table, "../data/supplemental_data/TableS4_fL.csv")
+
+
+##### Plot fL model visualization with HTML table of model data #####
+my_plotly <- plotly::ggplotly(plot, tooltip = "text") %>%
+  hide_legend()
+  # note: plotly does not support density ridges; only points show in interactive figure
+
+interactive_model_table <- model_output %>%
+  select(sample_name, sample_class2, ipl, fL,  d13C_ipl_corr, se_reported) %>%
+  filter(!is.na(fL)) %>%
+  mutate(fL = round(fL, 3),
+         d13C_ipl_corr = round(d13C_ipl_corr, 1), 
+         se_reported = round(se_reported, 1)) %>%
+  rename(`Sample Name` = sample_name, 
+         `Sample Type` = sample_class2,
+         IPL = ipl,
+         `d13C (permil)` = d13C_ipl_corr,
+         `d13C Standard Error` = se_reported) %>%
+  DT::datatable(options = list(lengthMenu = c(15, 20), pageLength = 5))
+
+
+full_interactive_model <- htmltools::browsable(
+  htmltools::tagList(list(
+    htmltools::tags$div(
+      style = 'width:100%;display:block;float:left;',
+      my_plotly
+    ),
+    htmltools::tags$div(
+      style = 'width:100%;display:block;float:left;',
+      interactive_model_table
+    )
+  ))
+)
+
+htmltools::save_html(full_interactive_model, "../figures/final_figures/full_interactive_fL_model.html")
+
 
 
 

@@ -1,3 +1,20 @@
+## ------------------ ##
+
+# Title: Dynamic range of GC-C-IRMS i45 signal intensity values.
+# Dataset: Lava Beds Lithoautotrophy
+# Date: 26 April 2021
+# Author: Matt Selensky
+# email: mselensky@u.northwestern.edu
+# Copyright (c) Matt Selensky, 2021
+
+# This script produces Figure S1 from the manuscript "Stable Carbon Isotope Depletions 
+# in Lipid Biomarkers Suggest Subsurface Carbon Fixation". Here, I create a scatterplot
+# to demonstrate that the dynamic range over which we measured d13C IPL values (0.1-15V)
+# in our A6/A7/B5 standards produced <0.2‰ shifts (Δ𝛿13C) 
+over this range and are
+# therefore appropriate for the reported sample d13C values.
+## ------------------ ##
+
 ##### load packages and data #####
 pacman::p_load(tidyverse, plotly, broom, ggdendro, RColorBrewer, ggpubr)
 irms_stds <- read_csv("../data/irms_standards.csv")

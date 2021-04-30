@@ -7,8 +7,12 @@
 # email: mselensky@u.northwestern.edu
 # Copyright (c) Matt Selensky, 2021
 
-# This script produces Figure 3 from the manuscript "Stable Carbon Isotope Depletions in 
-# Lipid Biomarkers Suggest Subsurface Carbon Fixation". To do so, 
+# This script produces Figure 3 from the manuscript "Stable Carbon Isotope Depletions 
+# in Lipid Biomarkers Suggest Subsurface Carbon Fixation". To do so, an NMDS object 
+# is first produced from a log10-transformed matrix of relative lipid abundance data.
+# The top 10 fatty acids that contribute the most variance (p < 0.01) are then 
+# obtained via vegan::envfit(). Plotted NMDS scores are sized by total IPL yield 
+# relative to the total lipid extract (TLE) and are overlain with vector loadings.
 
 ## ------------------ ##
 
@@ -154,19 +158,28 @@ ipl_sum_frac %>%
   mutate(ipl_mg_g_tle_sum = ipl_ug_g_tle_sum/1000) %>%
   left_join(., select(sample_metadata, sample_name, sample_class2)) %>%
   group_by(sample_class2) %>%
-  filter(!sample_name %in% c("V460-20190810-A-32")) %>%
+  filter(!sample_name %in% c("V460-20190810-A-32")) %>% # remove outlier
   summarize(ipl_mg_g_tle_bin_mean = mean(ipl_mg_g_tle_sum),
             ipl_mg_g_tle_bin_sd = sd(ipl_mg_g_tle_sum),
             ipl_mg_g_tle_sum = sum(ipl_mg_g_tle_sum)) %>%
   arrange(-ipl_mg_g_tle_bin_mean)
 
-ipl_sum_frac %>%
-  mutate(ipl_mg_g_tle_sum = ipl_ug_g_tle_sum/1000) %>%
-  left_join(., select(sample_metadata, sample_name, sample_class2)) %>%
-  group_by(sample_name) %>%
-  filter(sample_class2 %in% c("surface soil", "cave soil")) %>%
-  summarize(ipl_mg_g_tle_sum = sum(ipl_mg_g_tle_sum)) %>%
-  arrange(-ipl_mg_g_tle_sum)
+
+table_s3 <- ipl_ug_g_tle %>%
+  pivot_longer(2:ncol(.), names_to = "ipl", values_to = "ug_g_tle") %>%
+  left_join(., select(sample_metadata, sample_name, sample_class2, tle_g), "sample_name") %>%
+  left_join(., ipl_sum_frac) %>%
+  left_join(ipl_metadata) %>%
+  group_by(ipl_class, sample_class2) %>%
+  summarize(summed_yield_ug_g_tle = sum(ug_g_tle), 
+            binned_mean_ug_g_tle = mean(ug_g_tle),
+            binned_sd_ug_g_tle = sd(ug_g_tle)) %>%
+  distinct() %>%
+  arrange(desc(summed_yield_ug_g_tle)) %>%
+  rename(sample_type = sample_class2) %>%
+  filter(!summed_yield_ug_g_tle <= 0)
+
+write_csv(table_s3, "../data/supplemental_data/TableS3_binned_yields.csv")
 
 
 

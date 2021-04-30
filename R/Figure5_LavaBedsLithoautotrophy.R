@@ -1,3 +1,23 @@
+## ------------------ ##
+
+# --- Script information
+# Title: Comparing fatty acid d13C values across lava cave samples and surface soils
+# Dataset: Lava Beds Lithoautotrophy
+# Date: 30 Apr 2021
+# Author: Matt Selensky
+# email: mselensky@u.northwestern.edu
+# Copyright (c) Matt Selensky, 2021
+
+# --- Summary
+# This script produces a bubbleplot that compares the d13C values of individual
+# fatty acids. Samples are first clustered by log10-transformed relative lipid 
+# abundance to inform the x-axis ordering of the final plot. Next, the relative
+# lipid abundance matrix is transposed to produce a second dendrogram that will 
+# be used to order the IPL-derived fatty acids themselves on the y-axis.
+# Points in the bubbleplot are sized by fatty acid abundance relative to the 
+# total lipid extract (TLE) and are colored by compound-specific d13C values.
+
+## ------------------ ##
 
 ##### load packages and data ######
 
@@ -23,11 +43,14 @@ sample_class2_colors <- c("tan biofilm" = "#17174a",
                           "ooze" = "#2d7529")
 
 ##### dendrogram construction #####
-# We will want to construct two dendrograms to inform the ordering of the columns and rows in the final figure. 
-# One dendrogram will represent the hierarchcal clustering of each sample_fraction (the columns), 
-# while the other dendrogram will cluster based on the IPLs themselves (the rows)
+# We will want to construct two dendrograms to inform the ordering of the 
+# columns and rows in the final figure. 
+# One dendrogram will represent the hierarchcal clustering of each 
+# sample_fraction (the columns), while the other dendrogram will cluster 
+# based on the IPLs themselves (the rows). 
 
-# create matrix of relative IPL abundances by sample_fraction. this will be used for the first dendrogram
+# create matrix of relative IPL abundances by sample_fraction. 
+# (this will be used for the first dendrogram)
 
 # relative abundance matrix for each individual sample_fraction
 frac_abbrev <- data.frame("glycolipids" = "P2", 
@@ -54,14 +77,15 @@ ipl_rel_mat <- ipl_rel_long %>%
   column_to_rownames("sample_fraction_coded") %>%
   replace(is.na(.), 0) %>% as.matrix() 
 
-# transpose ipl_rel_mat_frac to perform distance calculations on IPLs (not sample_fraction) for the second dendrogram
+# transpose ipl_rel_mat_frac to perform distance calculations on IPLs 
+# (this will be used for the second dendrogram)
 ipl_rel_mat_ipl <- ipl_rel_mat %>% t()
 
 # create dendrogram based on relative IPL abundance for each sample_fraction (dendrogram 1)
 euc_dist1 <- dist(log10(ipl_rel_mat+1), "manhattan") #log10-transformed
 dendrogram1 <- hclust(euc_dist1, "complete")
 
-#flipping dendrogram with ggtree + treeio
+#f lipping dendrogram with ggtree + treeio for aesthetics
 ggt1 <- ggtree(dendrogram1) 
 ggt1_df <- get.tree(ggt1)$tip.label %>%
   as.data.frame() %>%
@@ -104,8 +128,8 @@ bubble_plot_data <- yield_plus_d13C %>%
          #!ipl %in% excluded_ipls, 
          !se_reported > 0.3) %>%
   mutate(d13C_ipl_corr = ((1/(carbon_number+methanol_C_count))*(-38.9)) + (1-(1/(carbon_number+1)))*avg_d13C_vpdb_pred)
-#left_join(., labs1, by = c("sample_fraction" = "label")) %>%
 
+# export `datatable` as supplemental figure s2
 datatable <- bubble_plot_data %>%
   group_by(sample_fraction_coded, ipl) %>%
   mutate(d13C_plus_se = str_c(round(d13C_ipl_corr, 2), 
@@ -120,6 +144,7 @@ write_csv(datatable, "../data/supplemental_data/TableS2_irms_d13C.csv")
 
 # make bubble plot of IPLs and sample_fraction ordered by hclust() results
 p3 <- bubble_plot_data %>%
+  
   ggplot(aes(-as.numeric(order), factor(ipl, levels = labs2))) + 
   geom_point(aes(color = d13C_ipl_corr, size = ipl_ug_g_tle/1000,
                  text = paste('<br>', 'IPL: ', ipl,
@@ -144,6 +169,4 @@ p3 <- bubble_plot_data %>%
 # plot dendrogram1 and irms bubble plot together  
 ggarrange(p3,
           p,
-          #p1 + theme(axis.text = element_blank(), 
-          #           axis.title = element_blank()), 
           nrow = 2, common.legend = T, align = "hv", heights = c(4,1))

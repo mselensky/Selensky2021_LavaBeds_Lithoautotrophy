@@ -1,3 +1,22 @@
+## ------------------ ##
+
+# Title: Stable carbon isotope compositions of C reservoirs at Lava Beds
+# Dataset: Lava Beds Lithoautotrophy
+# Date: 30 April 2021
+# Author: Matt Selensky
+# email: mselensky@u.northwestern.edu
+# Copyright (c) Matt Selensky, 2021
+
+# This script produces Figure 4 from the manuscript "Stable Carbon Isotope Depletions 
+# in Lipid Biomarkers Suggest Subsurface Carbon Fixation". To do so, raw tank d13C 
+# values from extracted fatty acids are converted to the VPDB scale by comparing 
+# tank values to known standards of acetanilide and urea. Resulting compound-specific
+# isotope data is then merged with bulk TOC, DOC, and DIC d13C data to produce a
+# figure summarizing the differences in fatty acid d13C values by sample type 
+# compared to environmental C reservoirs.
+
+## ------------------ ##
+
 pacman::p_load(tidyverse)
 
 ipl_irms <- read_csv("../data/irms_samples_tank.csv") # raw tank values for samples
@@ -151,6 +170,7 @@ point_color <- c("#8F2D56", #dic
 
 # plot
 yield_plus_d13C %>% 
+  left_join(ipl_metadata) %>%
   mutate(d13C_ipl_corr = ((1/(carbon_number+methanol_C_count))*(-38.9)) + (1-(1/(carbon_number+1)))*avg_d13C_vpdb_pred) %>%
   filter(!sample_color %in% c("blue-green")) %>%
   ggplot() +
@@ -176,3 +196,5 @@ yield_plus_d13C %>%
   theme_bw() +
   theme(axis.title.y = element_blank()) +
   xlab("d13C (permille)")
+
+
