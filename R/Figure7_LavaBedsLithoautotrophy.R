@@ -115,13 +115,14 @@ text_ipls <- c("n-C18:0", "n-C22:0", "n-C16:0",
 
 plot <- model_output %>% 
   filter(se_reported < 0.3,
-         #ipl %in% text_ipls
+         ipl %in% text_ipls
          ) %>%
   group_by(sample_class2) %>%
   ggplot() +
   geom_density_ridges(aes(fL, 
                           reorder(ipl, fL, mean), 
-                          fill = paste(sample_class2))) +
+                          fill = paste(sample_class2)),
+                      stat = "density_ridges") +
   geom_point(aes(fL,
                  reorder(ipl, fL, mean), 
                  color = sample_class2, 

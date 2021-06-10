@@ -144,7 +144,6 @@ write_csv(datatable, "../data/supplemental_data/TableS2_irms_d13C.csv")
 
 # make bubble plot of IPLs and sample_fraction ordered by hclust() results
 p3 <- bubble_plot_data %>%
-  
   ggplot(aes(-as.numeric(order), factor(ipl, levels = labs2))) + 
   geom_point(aes(color = d13C_ipl_corr, size = ipl_ug_g_tle/1000,
                  text = paste('<br>', 'IPL: ', ipl,

@@ -116,7 +116,7 @@ nmds_plot <- ggplot() +
                                         color = ipl_class,
                                         label = ipl)) +
   geom_point(data = frac_scores, 
-             shape = 21, 
+             #shape = 21, 
              aes(NMDS1, NMDS2, 
                  size = ipl_ug_g_tle_sum/1000, 
                  fill = sample_class2,
@@ -125,12 +125,13 @@ nmds_plot <- ggplot() +
                                "<br>", 
                                "sample type: ", sample_class2,
                                "<br>", 
-                               "TOC d13C (permil): ", d13C_toc))) +
+                               "TOC d13C (permil): ", d13C_toc),
+                 shape = cave)) +
   scale_color_manual(values = ipl_class_colorz) +
   scale_fill_manual(values = sample_class2_colorz) +
   #scale_shape_manual(values = shapes) +
   guides(shape = FALSE, 
-         fill = guide_legend(override.aes = list(shape = 21, 
+         fill = guide_legend(override.aes = list(#shape = 21, 
                                                  size = 5))) +
   labs(fill = "Sample Type",
        color = "Fatty Acid Type") +
