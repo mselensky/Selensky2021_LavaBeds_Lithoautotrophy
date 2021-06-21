@@ -1,0 +1,385 @@
+ipl,core_lipid,carbon_number,methanol_C_count,ipl_class,fame,branch_position,pi_number,conformation,omega,ID_no,fraction
+n-C10:0.glycolipids,n-C10:0,10,1,normal,Y,NA,NA,NA,NA,1,glycolipids
+n-C10:0.residual_polar_lipids,n-C10:0,10,1,normal,Y,NA,NA,NA,NA,1,residual_polar_lipids
+n-C10:0.phospholipids,n-C10:0,10,1,normal,Y,NA,NA,NA,NA,1,phospholipids
+n-C12:0.glycolipids,n-C12:0,12,1,normal,Y,NA,NA,NA,NA,2,glycolipids
+n-C12:0.residual_polar_lipids,n-C12:0,12,1,normal,Y,NA,NA,NA,NA,2,residual_polar_lipids
+n-C12:0.phospholipids,n-C12:0,12,1,normal,Y,NA,NA,NA,NA,2,phospholipids
+"Nonanedioic acid, monomethyl ester_1.glycolipids","Nonanedioic acid, monomethyl ester_1",9,2,diacid,Y,NA,NA,NA,NA,3,glycolipids
+"Nonanedioic acid, monomethyl ester_1.residual_polar_lipids","Nonanedioic acid, monomethyl ester_1",9,2,diacid,Y,NA,NA,NA,NA,3,residual_polar_lipids
+"Nonanedioic acid, monomethyl ester_1.phospholipids","Nonanedioic acid, monomethyl ester_1",9,2,diacid,Y,NA,NA,NA,NA,3,phospholipids
+"Nonanedioic acid, monomethyl ester_2.glycolipids","Nonanedioic acid, monomethyl ester_2",9,2,diacid,Y,NA,NA,NA,NA,4,glycolipids
+"Nonanedioic acid, monomethyl ester_2.residual_polar_lipids","Nonanedioic acid, monomethyl ester_2",9,2,diacid,Y,NA,NA,NA,NA,4,residual_polar_lipids
+"Nonanedioic acid, monomethyl ester_2.phospholipids","Nonanedioic acid, monomethyl ester_2",9,2,diacid,Y,NA,NA,NA,NA,4,phospholipids
+i-C13:0.glycolipids,i-C13:0,13,1,branched,Y,iso,NA,NA,NA,5,glycolipids
+i-C13:0.residual_polar_lipids,i-C13:0,13,1,branched,Y,iso,NA,NA,NA,5,residual_polar_lipids
+i-C13:0.phospholipids,i-C13:0,13,1,branched,Y,iso,NA,NA,NA,5,phospholipids
+ai-C13:0.glycolipids,ai-C13:0,13,1,branched,Y,anteiso,NA,NA,NA,6,glycolipids
+ai-C13:0.residual_polar_lipids,ai-C13:0,13,1,branched,Y,anteiso,NA,NA,NA,6,residual_polar_lipids
+ai-C13:0.phospholipids,ai-C13:0,13,1,branched,Y,anteiso,NA,NA,NA,6,phospholipids
+C8-diacid.glycolipids,C8-diacid,8,2,diacid,Y,NA,NA,NA,NA,7,glycolipids
+C8-diacid.residual_polar_lipids,C8-diacid,8,2,diacid,Y,NA,NA,NA,NA,7,residual_polar_lipids
+C8-diacid.phospholipids,C8-diacid,8,2,diacid,Y,NA,NA,NA,NA,7,phospholipids
+n-C13:0.glycolipids,n-C13:0,13,1,normal,Y,NA,NA,NA,NA,8,glycolipids
+n-C13:0.residual_polar_lipids,n-C13:0,13,1,normal,Y,NA,NA,NA,NA,8,residual_polar_lipids
+n-C13:0.phospholipids,n-C13:0,13,1,normal,Y,NA,NA,NA,NA,8,phospholipids
+unknown1.glycolipids,unknown1,NA,1,other,N,NA,NA,NA,NA,9,glycolipids
+unknown1.residual_polar_lipids,unknown1,NA,1,other,N,NA,NA,NA,NA,9,residual_polar_lipids
+unknown1.phospholipids,unknown1,NA,1,other,N,NA,NA,NA,NA,9,phospholipids
+i-C14:0.glycolipids,i-C14:0,14,1,branched,Y,iso,NA,NA,NA,10,glycolipids
+i-C14:0.residual_polar_lipids,i-C14:0,14,1,branched,Y,iso,NA,NA,NA,10,residual_polar_lipids
+i-C14:0.phospholipids,i-C14:0,14,1,branched,Y,iso,NA,NA,NA,10,phospholipids
+C14:1.glycolipids,C14:1,14,1,unsaturated,Y,NA,1,unknown,NA,11,glycolipids
+C14:1.residual_polar_lipids,C14:1,14,1,unsaturated,Y,NA,1,unknown,NA,11,residual_polar_lipids
+C14:1.phospholipids,C14:1,14,1,unsaturated,Y,NA,1,unknown,NA,11,phospholipids
+n-C14:0.glycolipids,n-C14:0,14,1,normal,Y,NA,NA,NA,NA,12,glycolipids
+n-C14:0.residual_polar_lipids,n-C14:0,14,1,normal,Y,NA,NA,NA,NA,12,residual_polar_lipids
+n-C14:0.phospholipids,n-C14:0,14,1,normal,Y,NA,NA,NA,NA,12,phospholipids
+C13:1.glycolipids,C13:1,13,1,unsaturated,Y,NA,1,unknown,NA,13,glycolipids
+C13:1.residual_polar_lipids,C13:1,13,1,unsaturated,Y,NA,1,unknown,NA,13,residual_polar_lipids
+C13:1.phospholipids,C13:1,13,1,unsaturated,Y,NA,1,unknown,NA,13,phospholipids
+m-C15:0_1.glycolipids,m-C15:0_1,15,1,branched,Y,mid,NA,NA,NA,14,glycolipids
+m-C15:0_1.residual_polar_lipids,m-C15:0_1,15,1,branched,Y,mid,NA,NA,NA,14,residual_polar_lipids
+m-C15:0_1.phospholipids,m-C15:0_1,15,1,branched,Y,mid,NA,NA,NA,14,phospholipids
+C15:1_1.glycolipids,C15:1_1,15,1,unsaturated,Y,NA,NA,unknown,unknown,15,glycolipids
+C15:1_1.residual_polar_lipids,C15:1_1,15,1,unsaturated,Y,NA,NA,unknown,unknown,15,residual_polar_lipids
+C15:1_1.phospholipids,C15:1_1,15,1,unsaturated,Y,NA,NA,unknown,unknown,15,phospholipids
+C15:1_2.glycolipids,C15:1_2,15,1,unsaturated,Y,NA,NA,unknown,unknown,16,glycolipids
+C15:1_2.residual_polar_lipids,C15:1_2,15,1,unsaturated,Y,NA,NA,unknown,unknown,16,residual_polar_lipids
+C15:1_2.phospholipids,C15:1_2,15,1,unsaturated,Y,NA,NA,unknown,unknown,16,phospholipids
+m-C15:0_2.glycolipids,m-C15:0_2,15,1,branched,Y,mid,NA,NA,NA,17,glycolipids
+m-C15:0_2.residual_polar_lipids,m-C15:0_2,15,1,branched,Y,mid,NA,NA,NA,17,residual_polar_lipids
+m-C15:0_2.phospholipids,m-C15:0_2,15,1,branched,Y,mid,NA,NA,NA,17,phospholipids
+i-C15:0.glycolipids,i-C15:0,15,1,branched,Y,iso,NA,NA,NA,18,glycolipids
+i-C15:0.residual_polar_lipids,i-C15:0,15,1,branched,Y,iso,NA,NA,NA,18,residual_polar_lipids
+i-C15:0.phospholipids,i-C15:0,15,1,branched,Y,iso,NA,NA,NA,18,phospholipids
+ai-C15:0.glycolipids,ai-C15:0,15,1,branched,Y,anteiso,NA,NA,NA,19,glycolipids
+ai-C15:0.residual_polar_lipids,ai-C15:0,15,1,branched,Y,anteiso,NA,NA,NA,19,residual_polar_lipids
+ai-C15:0.phospholipids,ai-C15:0,15,1,branched,Y,anteiso,NA,NA,NA,19,phospholipids
+diacid_unknown.glycolipids,diacid_unknown,NA,2,diacid,Y,NA,NA,NA,NA,20,glycolipids
+diacid_unknown.residual_polar_lipids,diacid_unknown,NA,2,diacid,Y,NA,NA,NA,NA,20,residual_polar_lipids
+diacid_unknown.phospholipids,diacid_unknown,NA,2,diacid,Y,NA,NA,NA,NA,20,phospholipids
+C15:1_3.glycolipids,C15:1_3,15,1,unsaturated,N,NA,NA,unknown,unknown,21,glycolipids
+C15:1_3.residual_polar_lipids,C15:1_3,15,1,unsaturated,N,NA,NA,unknown,unknown,21,residual_polar_lipids
+C15:1_3.phospholipids,C15:1_3,15,1,unsaturated,N,NA,NA,unknown,unknown,21,phospholipids
+C15:1_4.glycolipids,C15:1_4,15,1,unsaturated,Y,NA,1,unknown,NA,22,glycolipids
+C15:1_4.residual_polar_lipids,C15:1_4,15,1,unsaturated,Y,NA,1,unknown,NA,22,residual_polar_lipids
+C15:1_4.phospholipids,C15:1_4,15,1,unsaturated,Y,NA,1,unknown,NA,22,phospholipids
+n-C15:0.glycolipids,n-C15:0,15,1,normal,Y,NA,NA,NA,NA,23,glycolipids
+n-C15:0.residual_polar_lipids,n-C15:0,15,1,normal,Y,NA,NA,NA,NA,23,residual_polar_lipids
+n-C15:0.phospholipids,n-C15:0,15,1,normal,Y,NA,NA,NA,NA,23,phospholipids
+C12-diacid.glycolipids,C12-diacid,12,2,diacid,Y,NA,NA,NA,NA,24,glycolipids
+C12-diacid.residual_polar_lipids,C12-diacid,12,2,diacid,Y,NA,NA,NA,NA,24,residual_polar_lipids
+C12-diacid.phospholipids,C12-diacid,12,2,diacid,Y,NA,NA,NA,NA,24,phospholipids
+m-C16:0_1.glycolipids,m-C16:0_1,16,1,branched,Y,mid,NA,NA,NA,25,glycolipids
+m-C16:0_1.residual_polar_lipids,m-C16:0_1,16,1,branched,Y,mid,NA,NA,NA,25,residual_polar_lipids
+m-C16:0_1.phospholipids,m-C16:0_1,16,1,branched,Y,mid,NA,NA,NA,25,phospholipids
+C16:1 w7 (trans).glycolipids,C16:1 w7 (trans),16,1,unsaturated,Y,NA,1,trans,7,26,glycolipids
+C16:1 w7 (trans).residual_polar_lipids,C16:1 w7 (trans),16,1,unsaturated,Y,NA,1,trans,7,26,residual_polar_lipids
+C16:1 w7 (trans).phospholipids,C16:1 w7 (trans),16,1,unsaturated,Y,NA,1,trans,7,26,phospholipids
+i-C16:0.glycolipids,i-C16:0,16,1,branched,Y,iso,NA,NA,NA,27,glycolipids
+i-C16:0.residual_polar_lipids,i-C16:0,16,1,branched,Y,iso,NA,NA,NA,27,residual_polar_lipids
+i-C16:0.phospholipids,i-C16:0,16,1,branched,Y,iso,NA,NA,NA,27,phospholipids
+C16:2.glycolipids,C16:2,16,1,unsaturated,Y,NA,2,unknown,NA,28,glycolipids
+C16:2.residual_polar_lipids,C16:2,16,1,unsaturated,Y,NA,2,unknown,NA,28,residual_polar_lipids
+C16:2.phospholipids,C16:2,16,1,unsaturated,Y,NA,2,unknown,NA,28,phospholipids
+C16:1 w9.glycolipids,C16:1 w9,16,1,unsaturated,Y,NA,1,unknown,9,30,glycolipids
+C16:1 w9.residual_polar_lipids,C16:1 w9,16,1,unsaturated,Y,NA,1,unknown,9,30,residual_polar_lipids
+C16:1 w9.phospholipids,C16:1 w9,16,1,unsaturated,Y,NA,1,unknown,9,30,phospholipids
+C16:1 w7 (cis).glycolipids,C16:1 w7 (cis),16,1,unsaturated,Y,NA,1,cis,7,31,glycolipids
+C16:1 w7 (cis).residual_polar_lipids,C16:1 w7 (cis),16,1,unsaturated,Y,NA,1,cis,7,31,residual_polar_lipids
+C16:1 w7 (cis).phospholipids,C16:1 w7 (cis),16,1,unsaturated,Y,NA,1,cis,7,31,phospholipids
+C16:1 w5.glycolipids,C16:1 w5,16,1,unsaturated,Y,NA,1,unknown,5,32,glycolipids
+C16:1 w5.residual_polar_lipids,C16:1 w5,16,1,unsaturated,Y,NA,1,unknown,5,32,residual_polar_lipids
+C16:1 w5.phospholipids,C16:1 w5,16,1,unsaturated,Y,NA,1,unknown,5,32,phospholipids
+n-C16:0.glycolipids,n-C16:0,16,1,normal,Y,NA,NA,NA,NA,33,glycolipids
+n-C16:0.residual_polar_lipids,n-C16:0,16,1,normal,Y,NA,NA,NA,NA,33,residual_polar_lipids
+n-C16:0.phospholipids,n-C16:0,16,1,normal,Y,NA,NA,NA,NA,33,phospholipids
+10_14_DiMe_C17.glycolipids,10_14_DiMe_C17,17,1,branched,Y,mid,NA,NA,NA,34,glycolipids
+10_14_DiMe_C17.residual_polar_lipids,10_14_DiMe_C17,17,1,branched,Y,mid,NA,NA,NA,34,residual_polar_lipids
+10_14_DiMe_C17.phospholipids,10_14_DiMe_C17,17,1,branched,Y,mid,NA,NA,NA,34,phospholipids
+C17:1_1.glycolipids,C17:1_1,17,1,unsaturated,Y,NA,1,unknown,NA,35,glycolipids
+C17:1_1.residual_polar_lipids,C17:1_1,17,1,unsaturated,Y,NA,1,unknown,NA,35,residual_polar_lipids
+C17:1_1.phospholipids,C17:1_1,17,1,unsaturated,Y,NA,1,unknown,NA,35,phospholipids
+C17 alkanone.glycolipids,C17 alkanone,17,1,alkanone,N,NA,NA,NA,NA,36,glycolipids
+C17 alkanone.residual_polar_lipids,C17 alkanone,17,1,alkanone,N,NA,NA,NA,NA,36,residual_polar_lipids
+C17 alkanone.phospholipids,C17 alkanone,17,1,alkanone,N,NA,NA,NA,NA,36,phospholipids
+C17:1_2.glycolipids,C17:1_2,17,1,unsaturated,Y,NA,1,unknown,NA,37,glycolipids
+C17:1_2.residual_polar_lipids,C17:1_2,17,1,unsaturated,Y,NA,1,unknown,NA,37,residual_polar_lipids
+C17:1_2.phospholipids,C17:1_2,17,1,unsaturated,Y,NA,1,unknown,NA,37,phospholipids
+C17:1 w8 (trans).glycolipids,C17:1 w8 (trans),17,1,unsaturated,Y,NA,1,trans,8,38,glycolipids
+C17:1 w8 (trans).residual_polar_lipids,C17:1 w8 (trans),17,1,unsaturated,Y,NA,1,trans,8,38,residual_polar_lipids
+C17:1 w8 (trans).phospholipids,C17:1 w8 (trans),17,1,unsaturated,Y,NA,1,trans,8,38,phospholipids
+10Me_C17:0.glycolipids,10Me_C17:0,17,1,branched,Y,mid,NA,NA,NA,39,glycolipids
+10Me_C17:0.residual_polar_lipids,10Me_C17:0,17,1,branched,Y,mid,NA,NA,NA,39,residual_polar_lipids
+10Me_C17:0.phospholipids,10Me_C17:0,17,1,branched,Y,mid,NA,NA,NA,39,phospholipids
+m-C17:0_1.glycolipids,m-C17:0_1,17,1,branched,Y,mid,NA,NA,NA,40,glycolipids
+m-C17:0_1.residual_polar_lipids,m-C17:0_1,17,1,branched,Y,mid,NA,NA,NA,40,residual_polar_lipids
+m-C17:0_1.phospholipids,m-C17:0_1,17,1,branched,Y,mid,NA,NA,NA,40,phospholipids
+m-C17:0_2.glycolipids,m-C17:0_2,17,1,branched,Y,mid,NA,NA,NA,41,glycolipids
+m-C17:0_2.residual_polar_lipids,m-C17:0_2,17,1,branched,Y,mid,NA,NA,NA,41,residual_polar_lipids
+m-C17:0_2.phospholipids,m-C17:0_2,17,1,branched,Y,mid,NA,NA,NA,41,phospholipids
+i-C17:0.glycolipids,i-C17:0,17,1,branched,Y,iso,NA,NA,NA,42,glycolipids
+i-C17:0.residual_polar_lipids,i-C17:0,17,1,branched,Y,iso,NA,NA,NA,42,residual_polar_lipids
+i-C17:0.phospholipids,i-C17:0,17,1,branched,Y,iso,NA,NA,NA,42,phospholipids
+ai-C17:0.glycolipids,ai-C17:0,17,1,branched,Y,anteiso,NA,NA,NA,43,glycolipids
+ai-C17:0.residual_polar_lipids,ai-C17:0,17,1,branched,Y,anteiso,NA,NA,NA,43,residual_polar_lipids
+ai-C17:0.phospholipids,ai-C17:0,17,1,branched,Y,anteiso,NA,NA,NA,43,phospholipids
+C17:1 w8 (cis).glycolipids,C17:1 w8 (cis),17,1,unsaturated,Y,NA,1,cis,8,44,glycolipids
+C17:1 w8 (cis).residual_polar_lipids,C17:1 w8 (cis),17,1,unsaturated,Y,NA,1,cis,8,44,residual_polar_lipids
+C17:1 w8 (cis).phospholipids,C17:1 w8 (cis),17,1,unsaturated,Y,NA,1,cis,8,44,phospholipids
+unknown2.glycolipids,unknown2,NA,1,other,N,NA,NA,NA,NA,45,glycolipids
+unknown2.residual_polar_lipids,unknown2,NA,1,other,N,NA,NA,NA,NA,45,residual_polar_lipids
+unknown2.phospholipids,unknown2,NA,1,other,N,NA,NA,NA,NA,45,phospholipids
+diacid_unknown1.glycolipids,diacid_unknown1,NA,2,diacid,Y,NA,NA,NA,NA,46,glycolipids
+diacid_unknown1.residual_polar_lipids,diacid_unknown1,NA,2,diacid,Y,NA,NA,NA,NA,46,residual_polar_lipids
+diacid_unknown1.phospholipids,diacid_unknown1,NA,2,diacid,Y,NA,NA,NA,NA,46,phospholipids
+m-C18:0-C2.glycolipids,m-C18:0-C2,18,1,branched,Y,C2,NA,NA,NA,47,glycolipids
+m-C18:0-C2.residual_polar_lipids,m-C18:0-C2,18,1,branched,Y,C2,NA,NA,NA,47,residual_polar_lipids
+m-C18:0-C2.phospholipids,m-C18:0-C2,18,1,branched,Y,C2,NA,NA,NA,47,phospholipids
+C17_cyclic_1.glycolipids,C17_cyclic_1,17,1,cyclic,Y,NA,NA,NA,NA,48,glycolipids
+C17_cyclic_1.residual_polar_lipids,C17_cyclic_1,17,1,cyclic,Y,NA,NA,NA,NA,48,residual_polar_lipids
+C17_cyclic_1.phospholipids,C17_cyclic_1,17,1,cyclic,Y,NA,NA,NA,NA,48,phospholipids
+n-C17:0.glycolipids,n-C17:0,17,1,normal,Y,NA,NA,NA,NA,49,glycolipids
+n-C17:0.residual_polar_lipids,n-C17:0,17,1,normal,Y,NA,NA,NA,NA,49,residual_polar_lipids
+n-C17:0.phospholipids,n-C17:0,17,1,normal,Y,NA,NA,NA,NA,49,phospholipids
+i-C18:0.glycolipids,i-C18:0,18,1,branched,Y,iso,NA,NA,NA,50,glycolipids
+i-C18:0.residual_polar_lipids,i-C18:0,18,1,branched,Y,iso,NA,NA,NA,50,residual_polar_lipids
+i-C18:0.phospholipids,i-C18:0,18,1,branched,Y,iso,NA,NA,NA,50,phospholipids
+ai-C18:0.glycolipids,ai-C18:0,18,1,branched,Y,anteiso,NA,NA,NA,51,glycolipids
+ai-C18:0.residual_polar_lipids,ai-C18:0,18,1,branched,Y,anteiso,NA,NA,NA,51,residual_polar_lipids
+ai-C18:0.phospholipids,ai-C18:0,18,1,branched,Y,anteiso,NA,NA,NA,51,phospholipids
+m-C18:0_1.glycolipids,m-C18:0_1,18,1,branched,Y,mid,NA,NA,NA,52,glycolipids
+m-C18:0_1.residual_polar_lipids,m-C18:0_1,18,1,branched,Y,mid,NA,NA,NA,52,residual_polar_lipids
+m-C18:0_1.phospholipids,m-C18:0_1,18,1,branched,Y,mid,NA,NA,NA,52,phospholipids
+C14-diacid.glycolipids,C14-diacid,14,2,diacid,Y,NA,NA,NA,NA,53,glycolipids
+C14-diacid.residual_polar_lipids,C14-diacid,14,2,diacid,Y,NA,NA,NA,NA,53,residual_polar_lipids
+C14-diacid.phospholipids,C14-diacid,14,2,diacid,Y,NA,NA,NA,NA,53,phospholipids
+C18:1_1.glycolipids,C18:1_1,18,1,unsaturated,Y,NA,NA,NA,NA,54,glycolipids
+C18:1_1.residual_polar_lipids,C18:1_1,18,1,unsaturated,Y,NA,NA,NA,NA,54,residual_polar_lipids
+C18:1_1.phospholipids,C18:1_1,18,1,unsaturated,Y,NA,NA,NA,NA,54,phospholipids
+C17_cyclic_2.glycolipids,C17_cyclic_2,17,1,cyclic,Y,NA,NA,NA,NA,55,glycolipids
+C17_cyclic_2.residual_polar_lipids,C17_cyclic_2,17,1,cyclic,Y,NA,NA,NA,NA,55,residual_polar_lipids
+C17_cyclic_2.phospholipids,C17_cyclic_2,17,1,cyclic,Y,NA,NA,NA,NA,55,phospholipids
+m-C18:0_2.glycolipids,m-C18:0_2,18,1,branched,Y,mid,NA,NA,NA,56,glycolipids
+m-C18:0_2.residual_polar_lipids,m-C18:0_2,18,1,branched,Y,mid,NA,NA,NA,56,residual_polar_lipids
+m-C18:0_2.phospholipids,m-C18:0_2,18,1,branched,Y,mid,NA,NA,NA,56,phospholipids
+m-C18:0_3.glycolipids,m-C18:0_3,18,1,branched,Y,mid,NA,NA,NA,57,glycolipids
+m-C18:0_3.residual_polar_lipids,m-C18:0_3,18,1,branched,Y,mid,NA,NA,NA,57,residual_polar_lipids
+m-C18:0_3.phospholipids,m-C18:0_3,18,1,branched,Y,mid,NA,NA,NA,57,phospholipids
+C18:3.glycolipids,C18:3,18,1,unsaturated,Y,NA,3,unknown,NA,58,glycolipids
+C18:3.residual_polar_lipids,C18:3,18,1,unsaturated,Y,NA,3,unknown,NA,58,residual_polar_lipids
+C18:3.phospholipids,C18:3,18,1,unsaturated,Y,NA,3,unknown,NA,58,phospholipids
+C18:4.glycolipids,C18:4,18,1,unsaturated,Y,NA,4,unknown,NA,59,glycolipids
+C18:4.residual_polar_lipids,C18:4,18,1,unsaturated,Y,NA,4,unknown,NA,59,residual_polar_lipids
+C18:4.phospholipids,C18:4,18,1,unsaturated,Y,NA,4,unknown,NA,59,phospholipids
+C18:2_1.glycolipids,C18:2_1,18,1,unsaturated,Y,NA,2,unknown,NA,60,glycolipids
+C18:2_1.residual_polar_lipids,C18:2_1,18,1,unsaturated,Y,NA,2,unknown,NA,60,residual_polar_lipids
+C18:2_1.phospholipids,C18:2_1,18,1,unsaturated,Y,NA,2,unknown,NA,60,phospholipids
+C18:2_2.glycolipids,C18:2_2,18,1,unsaturated,Y,NA,2,unknown,NA,61,glycolipids
+C18:2_2.residual_polar_lipids,C18:2_2,18,1,unsaturated,Y,NA,2,unknown,NA,61,residual_polar_lipids
+C18:2_2.phospholipids,C18:2_2,18,1,unsaturated,Y,NA,2,unknown,NA,61,phospholipids
+C18:1 w9.glycolipids,C18:1 w9,18,1,unsaturated,Y,NA,1,unknown,9,62,glycolipids
+C18:1 w9.residual_polar_lipids,C18:1 w9,18,1,unsaturated,Y,NA,1,unknown,9,62,residual_polar_lipids
+C18:1 w9.phospholipids,C18:1 w9,18,1,unsaturated,Y,NA,1,unknown,9,62,phospholipids
+C18:1_2.glycolipids,C18:1_2,18,1,unsaturated,Y,NA,1,unknown,NA,63,glycolipids
+C18:1_2.residual_polar_lipids,C18:1_2,18,1,unsaturated,Y,NA,1,unknown,NA,63,residual_polar_lipids
+C18:1_2.phospholipids,C18:1_2,18,1,unsaturated,Y,NA,1,unknown,NA,63,phospholipids
+C18:1 w7.glycolipids,C18:1 w7,18,1,unsaturated,Y,NA,1,unknown,7,64,glycolipids
+C18:1 w7.residual_polar_lipids,C18:1 w7,18,1,unsaturated,Y,NA,1,unknown,7,64,residual_polar_lipids
+C18:1 w7.phospholipids,C18:1 w7,18,1,unsaturated,Y,NA,1,unknown,7,64,phospholipids
+C18:1_3.glycolipids,C18:1_3,18,1,unsaturated,Y,NA,1,unknown,NA,65,glycolipids
+C18:1_3.residual_polar_lipids,C18:1_3,18,1,unsaturated,Y,NA,1,unknown,NA,65,residual_polar_lipids
+C18:1_3.phospholipids,C18:1_3,18,1,unsaturated,Y,NA,1,unknown,NA,65,phospholipids
+n-C18:0.glycolipids,n-C18:0,18,1,normal,Y,NA,NA,NA,NA,66,glycolipids
+n-C18:0.residual_polar_lipids,n-C18:0,18,1,normal,Y,NA,NA,NA,NA,66,residual_polar_lipids
+n-C18:0.phospholipids,n-C18:0,18,1,normal,Y,NA,NA,NA,NA,66,phospholipids
+C19:1_1.glycolipids,C19:1_1,19,1,unsaturated,Y,NA,1,unknown,NA,67,glycolipids
+C19:1_1.residual_polar_lipids,C19:1_1,19,1,unsaturated,Y,NA,1,unknown,NA,67,residual_polar_lipids
+C19:1_1.phospholipids,C19:1_1,19,1,unsaturated,Y,NA,1,unknown,NA,67,phospholipids
+PAIBE.glycolipids,PAIBE,NA,NA,standard,N,NA,NA,NA,NA,68,glycolipids
+PAIBE.residual_polar_lipids,PAIBE,NA,NA,standard,N,NA,NA,NA,NA,68,residual_polar_lipids
+PAIBE.phospholipids,PAIBE,NA,NA,standard,N,NA,NA,NA,NA,68,phospholipids
+m-C19:0-C2.glycolipids,m-C19:0-C2,19,1,branched,Y,C2,NA,NA,NA,69,glycolipids
+m-C19:0-C2.residual_polar_lipids,m-C19:0-C2,19,1,branched,Y,C2,NA,NA,NA,69,residual_polar_lipids
+m-C19:0-C2.phospholipids,m-C19:0-C2,19,1,branched,Y,C2,NA,NA,NA,69,phospholipids
+C19:1_2.glycolipids,C19:1_2,19,1,unsaturated,Y,NA,NA,unknown,unknown,70,glycolipids
+C19:1_2.residual_polar_lipids,C19:1_2,19,1,unsaturated,Y,NA,NA,unknown,unknown,70,residual_polar_lipids
+C19:1_2.phospholipids,C19:1_2,19,1,unsaturated,Y,NA,NA,unknown,unknown,70,phospholipids
+m-C19:0_1.glycolipids,m-C19:0_1,19,1,branched,Y,mid,NA,NA,NA,71,glycolipids
+m-C19:0_1.residual_polar_lipids,m-C19:0_1,19,1,branched,Y,mid,NA,NA,NA,71,residual_polar_lipids
+m-C19:0_1.phospholipids,m-C19:0_1,19,1,branched,Y,mid,NA,NA,NA,71,phospholipids
+i-C19:0.glycolipids,i-C19:0,19,1,branched,Y,iso,NA,NA,NA,72,glycolipids
+i-C19:0.residual_polar_lipids,i-C19:0,19,1,branched,Y,iso,NA,NA,NA,72,residual_polar_lipids
+i-C19:0.phospholipids,i-C19:0,19,1,branched,Y,iso,NA,NA,NA,72,phospholipids
+ai-C19:0.glycolipids,ai-C19:0,19,1,branched,Y,anteiso,NA,NA,NA,73,glycolipids
+ai-C19:0.residual_polar_lipids,ai-C19:0,19,1,branched,Y,anteiso,NA,NA,NA,73,residual_polar_lipids
+ai-C19:0.phospholipids,ai-C19:0,19,1,branched,Y,anteiso,NA,NA,NA,73,phospholipids
+m-C20:0_1.glycolipids,m-C20:0_1,NA,1,branched,Y,mid,NA,NA,NA,74,glycolipids
+m-C20:0_1.residual_polar_lipids,m-C20:0_1,NA,1,branched,Y,mid,NA,NA,NA,74,residual_polar_lipids
+m-C20:0_1.phospholipids,m-C20:0_1,NA,1,branched,Y,mid,NA,NA,NA,74,phospholipids
+unknown3.glycolipids,unknown3,NA,1,other,N,NA,NA,NA,NA,75,glycolipids
+unknown3.residual_polar_lipids,unknown3,NA,1,other,N,NA,NA,NA,NA,75,residual_polar_lipids
+unknown3.phospholipids,unknown3,NA,1,other,N,NA,NA,NA,NA,75,phospholipids
+diacid_unknown3.glycolipids,diacid_unknown3,NA,2,diacid,Y,NA,NA,NA,NA,76,glycolipids
+diacid_unknown3.residual_polar_lipids,diacid_unknown3,NA,2,diacid,Y,NA,NA,NA,NA,76,residual_polar_lipids
+diacid_unknown3.phospholipids,diacid_unknown3,NA,2,diacid,Y,NA,NA,NA,NA,76,phospholipids
+m-C20:0_2.glycolipids,m-C20:0_2,NA,1,branched,Y,mid,NA,NA,NA,77,glycolipids
+m-C20:0_2.residual_polar_lipids,m-C20:0_2,NA,1,branched,Y,mid,NA,NA,NA,77,residual_polar_lipids
+m-C20:0_2.phospholipids,m-C20:0_2,NA,1,branched,Y,mid,NA,NA,NA,77,phospholipids
+C19:1_3.glycolipids,C19:1_3,19,1,unsaturated,Y,NA,NA,NA,NA,78,glycolipids
+C19:1_3.residual_polar_lipids,C19:1_3,19,1,unsaturated,Y,NA,NA,NA,NA,78,residual_polar_lipids
+C19:1_3.phospholipids,C19:1_3,19,1,unsaturated,Y,NA,NA,NA,NA,78,phospholipids
+m-C21:0-C2.glycolipids,m-C21:0-C2,NA,1,branched,Y,C2,NA,NA,NA,79,glycolipids
+m-C21:0-C2.residual_polar_lipids,m-C21:0-C2,NA,1,branched,Y,C2,NA,NA,NA,79,residual_polar_lipids
+m-C21:0-C2.phospholipids,m-C21:0-C2,NA,1,branched,Y,C2,NA,NA,NA,79,phospholipids
+unknown4A.glycolipids,unknown4A,NA,1,other,N,NA,NA,NA,NA,80,glycolipids
+unknown4A.residual_polar_lipids,unknown4A,NA,1,other,N,NA,NA,NA,NA,80,residual_polar_lipids
+unknown4A.phospholipids,unknown4A,NA,1,other,N,NA,NA,NA,NA,80,phospholipids
+n-C19:0.glycolipids,n-C19:0,19,1,normal,Y,NA,NA,NA,NA,81,glycolipids
+n-C19:0.residual_polar_lipids,n-C19:0,19,1,normal,Y,NA,NA,NA,NA,81,residual_polar_lipids
+n-C19:0.phospholipids,n-C19:0,19,1,normal,Y,NA,NA,NA,NA,81,phospholipids
+m-C20:0_3.glycolipids,m-C20:0_3,20,1,branched,Y,mid,NA,NA,NA,82,glycolipids
+m-C20:0_3.residual_polar_lipids,m-C20:0_3,20,1,branched,Y,mid,NA,NA,NA,82,residual_polar_lipids
+m-C20:0_3.phospholipids,m-C20:0_3,20,1,branched,Y,mid,NA,NA,NA,82,phospholipids
+C16-diacid.glycolipids,C16-diacid,16,2,diacid,Y,NA,NA,NA,NA,83,glycolipids
+C16-diacid.residual_polar_lipids,C16-diacid,16,2,diacid,Y,NA,NA,NA,NA,83,residual_polar_lipids
+C16-diacid.phospholipids,C16-diacid,16,2,diacid,Y,NA,NA,NA,NA,83,phospholipids
+diacid_unknown4.glycolipids,diacid_unknown4,NA,2,diacid,Y,NA,NA,NA,NA,84,glycolipids
+diacid_unknown4.residual_polar_lipids,diacid_unknown4,NA,2,diacid,Y,NA,NA,NA,NA,84,residual_polar_lipids
+diacid_unknown4.phospholipids,diacid_unknown4,NA,2,diacid,Y,NA,NA,NA,NA,84,phospholipids
+unknown acid.glycolipids,unknown acid,NA,1,other,N,NA,NA,NA,NA,85,glycolipids
+unknown acid.residual_polar_lipids,unknown acid,NA,1,other,N,NA,NA,NA,NA,85,residual_polar_lipids
+unknown acid.phospholipids,unknown acid,NA,1,other,N,NA,NA,NA,NA,85,phospholipids
+isoprenoid1.glycolipids,isoprenoid1,NA,1,other,N,NA,NA,NA,NA,86,glycolipids
+isoprenoid1.residual_polar_lipids,isoprenoid1,NA,1,other,N,NA,NA,NA,NA,86,residual_polar_lipids
+isoprenoid1.phospholipids,isoprenoid1,NA,1,other,N,NA,NA,NA,NA,86,phospholipids
+C20:1_1.glycolipids,C20:1_1,20,1,unsaturated,Y,NA,1,unknown,NA,87,glycolipids
+C20:1_1.residual_polar_lipids,C20:1_1,20,1,unsaturated,Y,NA,1,unknown,NA,87,residual_polar_lipids
+C20:1_1.phospholipids,C20:1_1,20,1,unsaturated,Y,NA,1,unknown,NA,87,phospholipids
+unknown4B.glycolipids,unknown4B,NA,1,other,N,NA,NA,NA,NA,88,glycolipids
+unknown4B.residual_polar_lipids,unknown4B,NA,1,other,N,NA,NA,NA,NA,88,residual_polar_lipids
+unknown4B.phospholipids,unknown4B,NA,1,other,N,NA,NA,NA,NA,88,phospholipids
+m-C20:0-C2.glycolipids,m-C20:0-C2,NA,1,branched,Y,C2,NA,NA,NA,89,glycolipids
+m-C20:0-C2.residual_polar_lipids,m-C20:0-C2,NA,1,branched,Y,C2,NA,NA,NA,89,residual_polar_lipids
+m-C20:0-C2.phospholipids,m-C20:0-C2,NA,1,branched,Y,C2,NA,NA,NA,89,phospholipids
+n-C20:0.glycolipids,n-C20:0,20,1,normal,Y,NA,NA,NA,NA,90,glycolipids
+n-C20:0.residual_polar_lipids,n-C20:0,20,1,normal,Y,NA,NA,NA,NA,90,residual_polar_lipids
+n-C20:0.phospholipids,n-C20:0,20,1,normal,Y,NA,NA,NA,NA,90,phospholipids
+unknown5.glycolipids,unknown5,NA,1,other,N,NA,NA,NA,NA,91,glycolipids
+unknown5.residual_polar_lipids,unknown5,NA,1,other,N,NA,NA,NA,NA,91,residual_polar_lipids
+unknown5.phospholipids,unknown5,NA,1,other,N,NA,NA,NA,NA,91,phospholipids
+unknown6.glycolipids,unknown6,NA,1,other,N,NA,NA,NA,NA,92,glycolipids
+unknown6.residual_polar_lipids,unknown6,NA,1,other,N,NA,NA,NA,NA,92,residual_polar_lipids
+unknown6.phospholipids,unknown6,NA,1,other,N,NA,NA,NA,NA,92,phospholipids
+m-C22:0-C2.glycolipids,m-C22:0-C2,22,1,branched,Y,C2,NA,NA,NA,93,glycolipids
+m-C22:0-C2.residual_polar_lipids,m-C22:0-C2,22,1,branched,Y,C2,NA,NA,NA,93,residual_polar_lipids
+m-C22:0-C2.phospholipids,m-C22:0-C2,22,1,branched,Y,C2,NA,NA,NA,93,phospholipids
+unknown7 (sterol-like).glycolipids,unknown7 (sterol-like),NA,1,sterol,N,NA,NA,NA,NA,94,glycolipids
+unknown7 (sterol-like).residual_polar_lipids,unknown7 (sterol-like),NA,1,sterol,N,NA,NA,NA,NA,94,residual_polar_lipids
+unknown7 (sterol-like).phospholipids,unknown7 (sterol-like),NA,1,sterol,N,NA,NA,NA,NA,94,phospholipids
+diacid_unknown5.glycolipids,diacid_unknown5,NA,2,diacid,Y,NA,NA,NA,NA,95,glycolipids
+diacid_unknown5.residual_polar_lipids,diacid_unknown5,NA,2,diacid,Y,NA,NA,NA,NA,95,residual_polar_lipids
+diacid_unknown5.phospholipids,diacid_unknown5,NA,2,diacid,Y,NA,NA,NA,NA,95,phospholipids
+ricinoleic acid.glycolipids,ricinoleic acid,NA,1,other,N,NA,NA,NA,NA,96,glycolipids
+ricinoleic acid.residual_polar_lipids,ricinoleic acid,NA,1,other,N,NA,NA,NA,NA,96,residual_polar_lipids
+ricinoleic acid.phospholipids,ricinoleic acid,NA,1,other,N,NA,NA,NA,NA,96,phospholipids
+m-C23:0-C2.glycolipids,m-C23:0-C2,23,1,branched,Y,C2,NA,NA,NA,97,glycolipids
+m-C23:0-C2.residual_polar_lipids,m-C23:0-C2,23,1,branched,Y,C2,NA,NA,NA,97,residual_polar_lipids
+m-C23:0-C2.phospholipids,m-C23:0-C2,23,1,branched,Y,C2,NA,NA,NA,97,phospholipids
+n-C21:0.glycolipids,n-C21:0,21,1,normal,Y,NA,NA,NA,NA,98,glycolipids
+n-C21:0.residual_polar_lipids,n-C21:0,21,1,normal,Y,NA,NA,NA,NA,98,residual_polar_lipids
+n-C21:0.phospholipids,n-C21:0,21,1,normal,Y,NA,NA,NA,NA,98,phospholipids
+C18-diacid.glycolipids,C18-diacid,18,2,diacid,Y,NA,NA,NA,NA,99,glycolipids
+C18-diacid.residual_polar_lipids,C18-diacid,18,2,diacid,Y,NA,NA,NA,NA,99,residual_polar_lipids
+C18-diacid.phospholipids,C18-diacid,18,2,diacid,Y,NA,NA,NA,NA,99,phospholipids
+m-C24:0-C2_1.glycolipids,m-C24:0-C2_1,24,1,branched,Y,C2,NA,NA,NA,100,glycolipids
+m-C24:0-C2_1.residual_polar_lipids,m-C24:0-C2_1,24,1,branched,Y,C2,NA,NA,NA,100,residual_polar_lipids
+m-C24:0-C2_1.phospholipids,m-C24:0-C2_1,24,1,branched,Y,C2,NA,NA,NA,100,phospholipids
+C22:1.glycolipids,C22:1,22,1,unsaturated,Y,NA,1,unknown,NA,101,glycolipids
+C22:1.residual_polar_lipids,C22:1,22,1,unsaturated,Y,NA,1,unknown,NA,101,residual_polar_lipids
+C22:1.phospholipids,C22:1,22,1,unsaturated,Y,NA,1,unknown,NA,101,phospholipids
+m-C24:0-C2_2.glycolipids,m-C24:0-C2_2,24,1,branched,Y,C2,NA,NA,NA,102,glycolipids
+m-C24:0-C2_2.residual_polar_lipids,m-C24:0-C2_2,24,1,branched,Y,C2,NA,NA,NA,102,residual_polar_lipids
+m-C24:0-C2_2.phospholipids,m-C24:0-C2_2,24,1,branched,Y,C2,NA,NA,NA,102,phospholipids
+n-C22:0.glycolipids,n-C22:0,22,1,normal,Y,NA,NA,NA,NA,103,glycolipids
+n-C22:0.residual_polar_lipids,n-C22:0,22,1,normal,Y,NA,NA,NA,NA,103,residual_polar_lipids
+n-C22:0.phospholipids,n-C22:0,22,1,normal,Y,NA,NA,NA,NA,103,phospholipids
+sterol1.glycolipids,sterol1,NA,1,sterol,N,NA,NA,NA,NA,104,glycolipids
+sterol1.residual_polar_lipids,sterol1,NA,1,sterol,N,NA,NA,NA,NA,104,residual_polar_lipids
+sterol1.phospholipids,sterol1,NA,1,sterol,N,NA,NA,NA,NA,104,phospholipids
+diacid_unknown6.glycolipids,diacid_unknown6,NA,2,diacid,Y,NA,NA,NA,NA,105,glycolipids
+diacid_unknown6.residual_polar_lipids,diacid_unknown6,NA,2,diacid,Y,NA,NA,NA,NA,105,residual_polar_lipids
+diacid_unknown6.phospholipids,diacid_unknown6,NA,2,diacid,Y,NA,NA,NA,NA,105,phospholipids
+C19-diacid.glycolipids,C19-diacid,19,2,diacid,Y,NA,NA,NA,NA,106,glycolipids
+C19-diacid.residual_polar_lipids,C19-diacid,19,2,diacid,Y,NA,NA,NA,NA,106,residual_polar_lipids
+C19-diacid.phospholipids,C19-diacid,19,2,diacid,Y,NA,NA,NA,NA,106,phospholipids
+m-C26-C2.glycolipids,m-C26-C2,26,1,branched,Y,C2,NA,NA,NA,107,glycolipids
+m-C26-C2.residual_polar_lipids,m-C26-C2,26,1,branched,Y,C2,NA,NA,NA,107,residual_polar_lipids
+m-C26-C2.phospholipids,m-C26-C2,26,1,branched,Y,C2,NA,NA,NA,107,phospholipids
+n-C23:0.glycolipids,n-C23:0,23,1,normal,Y,NA,NA,NA,NA,108,glycolipids
+n-C23:0.residual_polar_lipids,n-C23:0,23,1,normal,Y,NA,NA,NA,NA,108,residual_polar_lipids
+n-C23:0.phospholipids,n-C23:0,23,1,normal,Y,NA,NA,NA,NA,108,phospholipids
+sterol2.glycolipids,sterol2,NA,1,sterol,N,NA,NA,NA,NA,109,glycolipids
+sterol2.residual_polar_lipids,sterol2,NA,1,sterol,N,NA,NA,NA,NA,109,residual_polar_lipids
+sterol2.phospholipids,sterol2,NA,1,sterol,N,NA,NA,NA,NA,109,phospholipids
+C20-diacid.glycolipids,C20-diacid,20,2,diacid,Y,NA,NA,NA,NA,110,glycolipids
+C20-diacid.residual_polar_lipids,C20-diacid,20,2,diacid,Y,NA,NA,NA,NA,110,residual_polar_lipids
+C20-diacid.phospholipids,C20-diacid,20,2,diacid,Y,NA,NA,NA,NA,110,phospholipids
+m-C27:0-C2.glycolipids,m-C27:0-C2,NA,1,branched,Y,C2,NA,NA,NA,111,glycolipids
+m-C27:0-C2.residual_polar_lipids,m-C27:0-C2,NA,1,branched,Y,C2,NA,NA,NA,111,residual_polar_lipids
+m-C27:0-C2.phospholipids,m-C27:0-C2,NA,1,branched,Y,C2,NA,NA,NA,111,phospholipids
+n-C24:0.glycolipids,n-C24:0,24,1,normal,Y,NA,NA,NA,NA,112,glycolipids
+n-C24:0.residual_polar_lipids,n-C24:0,24,1,normal,Y,NA,NA,NA,NA,112,residual_polar_lipids
+n-C24:0.phospholipids,n-C24:0,24,1,normal,Y,NA,NA,NA,NA,112,phospholipids
+C23:1.glycolipids,C23:1,23,1,unsaturated,Y,NA,1,unknown,NA,113,glycolipids
+C23:1.residual_polar_lipids,C23:1,23,1,unsaturated,Y,NA,1,unknown,NA,113,residual_polar_lipids
+C23:1.phospholipids,C23:1,23,1,unsaturated,Y,NA,1,unknown,NA,113,phospholipids
+sterol3.glycolipids,sterol3,NA,1,sterol,N,NA,NA,NA,NA,115,glycolipids
+sterol3.residual_polar_lipids,sterol3,NA,1,sterol,N,NA,NA,NA,NA,115,residual_polar_lipids
+sterol3.phospholipids,sterol3,NA,1,sterol,N,NA,NA,NA,NA,115,phospholipids
+sterol4.glycolipids,sterol4,NA,1,sterol,N,NA,NA,NA,NA,116,glycolipids
+sterol4.residual_polar_lipids,sterol4,NA,1,sterol,N,NA,NA,NA,NA,116,residual_polar_lipids
+sterol4.phospholipids,sterol4,NA,1,sterol,N,NA,NA,NA,NA,116,phospholipids
+diacid_unknown7.glycolipids,diacid_unknown7,NA,2,diacid,Y,NA,NA,NA,NA,117,glycolipids
+diacid_unknown7.residual_polar_lipids,diacid_unknown7,NA,2,diacid,Y,NA,NA,NA,NA,117,residual_polar_lipids
+diacid_unknown7.phospholipids,diacid_unknown7,NA,2,diacid,Y,NA,NA,NA,NA,117,phospholipids
+n-C25:0.glycolipids,n-C25:0,25,1,normal,Y,NA,NA,NA,NA,118,glycolipids
+n-C25:0.residual_polar_lipids,n-C25:0,25,1,normal,Y,NA,NA,NA,NA,118,residual_polar_lipids
+n-C25:0.phospholipids,n-C25:0,25,1,normal,Y,NA,NA,NA,NA,118,phospholipids
+C22-diacid.glycolipids,C22-diacid,22,2,diacid,Y,NA,NA,NA,NA,119,glycolipids
+C22-diacid.residual_polar_lipids,C22-diacid,22,2,diacid,Y,NA,NA,NA,NA,119,residual_polar_lipids
+C22-diacid.phospholipids,C22-diacid,22,2,diacid,Y,NA,NA,NA,NA,119,phospholipids
+unknown8.glycolipids,unknown8,NA,1,other,N,NA,NA,NA,NA,120,glycolipids
+unknown8.residual_polar_lipids,unknown8,NA,1,other,N,NA,NA,NA,NA,120,residual_polar_lipids
+unknown8.phospholipids,unknown8,NA,1,other,N,NA,NA,NA,NA,120,phospholipids
+n-C26:0.glycolipids,n-C26:0,26,1,normal,Y,NA,NA,NA,NA,121,glycolipids
+n-C26:0.residual_polar_lipids,n-C26:0,26,1,normal,Y,NA,NA,NA,NA,121,residual_polar_lipids
+n-C26:0.phospholipids,n-C26:0,26,1,normal,Y,NA,NA,NA,NA,121,phospholipids
+n-C27:0.glycolipids,n-C27:0,27,1,normal,Y,NA,NA,NA,NA,123,glycolipids
+n-C27:0.residual_polar_lipids,n-C27:0,27,1,normal,Y,NA,NA,NA,NA,123,residual_polar_lipids
+n-C27:0.phospholipids,n-C27:0,27,1,normal,Y,NA,NA,NA,NA,123,phospholipids
+C24-diacid.glycolipids,C24-diacid,24,2,diacid,Y,NA,NA,NA,NA,124,glycolipids
+C24-diacid.residual_polar_lipids,C24-diacid,24,2,diacid,Y,NA,NA,NA,NA,124,residual_polar_lipids
+C24-diacid.phospholipids,C24-diacid,24,2,diacid,Y,NA,NA,NA,NA,124,phospholipids
+n-C28:0.glycolipids,n-C28:0,28,1,normal,Y,NA,NA,NA,NA,125,glycolipids
+n-C28:0.residual_polar_lipids,n-C28:0,28,1,normal,Y,NA,NA,NA,NA,125,residual_polar_lipids
+n-C28:0.phospholipids,n-C28:0,28,1,normal,Y,NA,NA,NA,NA,125,phospholipids
+sterol5.glycolipids,sterol5,NA,1,sterol,N,NA,NA,NA,NA,126,glycolipids
+sterol5.residual_polar_lipids,sterol5,NA,1,sterol,N,NA,NA,NA,NA,126,residual_polar_lipids
+sterol5.phospholipids,sterol5,NA,1,sterol,N,NA,NA,NA,NA,126,phospholipids
+n-C29:0.glycolipids,n-C29:0,29,1,normal,Y,NA,NA,NA,NA,127,glycolipids
+n-C29:0.residual_polar_lipids,n-C29:0,29,1,normal,Y,NA,NA,NA,NA,127,residual_polar_lipids
+n-C29:0.phospholipids,n-C29:0,29,1,normal,Y,NA,NA,NA,NA,127,phospholipids
+sterol6.glycolipids,sterol6,NA,1,sterol,N,NA,NA,NA,NA,128,glycolipids
+sterol6.residual_polar_lipids,sterol6,NA,1,sterol,N,NA,NA,NA,NA,128,residual_polar_lipids
+sterol6.phospholipids,sterol6,NA,1,sterol,N,NA,NA,NA,NA,128,phospholipids
+C26-diacid.glycolipids,C26-diacid,26,2,diacid,Y,NA,NA,NA,NA,129,glycolipids
+C26-diacid.residual_polar_lipids,C26-diacid,26,2,diacid,Y,NA,NA,NA,NA,129,residual_polar_lipids
+C26-diacid.phospholipids,C26-diacid,26,2,diacid,Y,NA,NA,NA,NA,129,phospholipids
+n-C30:0.glycolipids,n-C30:0,30,1,normal,Y,NA,NA,NA,NA,130,glycolipids
+n-C30:0.residual_polar_lipids,n-C30:0,30,1,normal,Y,NA,NA,NA,NA,130,residual_polar_lipids
+n-C30:0.phospholipids,n-C30:0,30,1,normal,Y,NA,NA,NA,NA,130,phospholipids
+n-C32:0.glycolipids,n-C32:0,32,1,normal,Y,NA,NA,NA,NA,131,glycolipids
+n-C32:0.residual_polar_lipids,n-C32:0,32,1,normal,Y,NA,NA,NA,NA,131,residual_polar_lipids
+n-C32:0.phospholipids,n-C32:0,32,1,normal,Y,NA,NA,NA,NA,131,phospholipids
