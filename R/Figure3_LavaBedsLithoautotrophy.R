@@ -22,10 +22,10 @@
 pacman::p_load(tidyverse, ggpubr, RColorBrewer, vegan, ggrepel)
 
 # load data
-ipl_ug_g_tle <- read_csv("../data/ipl_abun_table_ug_g_tle.csv")
-ipl_rel_abun <- read_csv("../data/ipl_rel_abun.csv")
-sample_metadata <- read_csv("../data/sample_metadata.csv")
-ipl_metadata <- read_csv("../data/ipl_metadata.csv")
+ipl_ug_g_tle <- read_csv("data/ipl_abun_table_ug_g_tle.csv")
+ipl_rel_abun <- read_csv("data/ipl_rel_abun.csv")
+sample_metadata <- read_csv("data/sample_metadata.csv")
+ipl_metadata <- read_csv("data/ipl_metadata.csv")
 
 # color palette data
 sample_class2_colorz <- c("tan biofilm" = "#17174a", 
@@ -178,7 +178,7 @@ table_s3 <- ipl_ug_g_tle %>%
   rename(sample_type = sample_class2) %>%
   filter(!summed_yield_ug_g_tle <= 0)
 
-write_csv(table_s3, "../data/supplemental_data/TableS3_binned_yields.csv")
+write_csv(table_s3, "data/supplemental_data/TableS3_binned_yields.csv")
 
 
 

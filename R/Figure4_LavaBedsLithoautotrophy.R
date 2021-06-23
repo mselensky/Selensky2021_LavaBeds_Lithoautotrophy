@@ -19,11 +19,11 @@
 
 pacman::p_load(tidyverse)
 
-ipl_irms <- read_csv("../data/irms_samples_tank.csv") # raw tank values for samples
-irms_stds <- read_csv("../data/irms_standards.csv") 
-ipl_ug_g_tle <- read_csv("../data/ipl_abun_table_ug_g_tle.csv")
-sample_metadata <- read_csv("../data/sample_metadata.csv")
-ipl_metadata <- read_csv("../data/ipl_metadata.csv")
+ipl_irms <- read_csv("data/irms_samples_tank.csv") # raw tank values for samples
+irms_stds <- read_csv("data/irms_standards.csv") 
+ipl_ug_g_tle <- read_csv("data/ipl_abun_table_ug_g_tle.csv")
+sample_metadata <- read_csv("data/sample_metadata.csv")
+ipl_metadata <- read_csv("data/ipl_metadata.csv")
 
 # Convert sample tank d13C_IPL values to VPDB scale
 
@@ -146,7 +146,7 @@ yield_plus_d13C <- left_join(ipl_vpdb_avg, tle_long_irms) %>%
   filter(!is.na(sample_name))
 
 # export yield_plus_d13C for use in Figure 5
-write_csv(yield_plus_d13C, "../data/ipl_yield_plus_d13C.csv")
+write_csv(yield_plus_d13C, "data/ipl_yield_plus_d13C.csv")
 
 ##### Visualize stable isotopic composition of C reservoirs in the lava tubes #####
 
@@ -201,4 +201,4 @@ ipl_ug_g_tle %>%
   left_join(select(sample_metadata, sample_name, sample_class2)) %>%
   select(sample_name, sample_class2, everything()) %>%
   arrange(sample_class2) %>%
-  write_csv("../data/supplemental_data/TableS2_lipids_ug_per_g_tle.csv")
+  write_csv("data/supplemental_data/TableS2_lipids_ug_per_g_tle.csv")

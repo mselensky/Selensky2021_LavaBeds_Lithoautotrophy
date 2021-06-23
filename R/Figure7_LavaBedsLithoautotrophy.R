@@ -23,10 +23,10 @@
 
 pacman::p_load(tidyverse, ggridges)
 
-aqueous <- read_csv("../data/aqueous_data.csv")
-yield_plus_d13C <- read_csv("../data/ipl_yield_plus_d13C.csv") %>% # from Figure4_LavaBedsLithoautotrophy.R
+aqueous <- read_csv("data/aqueous_data.csv")
+yield_plus_d13C <- read_csv("data/ipl_yield_plus_d13C.csv") %>% # from Figure4_LavaBedsLithoautotrophy.R
   filter(!sample_fraction_coded %in% c("L853-20180801-F-01-P3", "L853-20180801-F-01-P4"))
-ipl_metadata <- read_csv("../data/ipl_metadata.csv")
+ipl_metadata <- read_csv("data/ipl_metadata.csv")
 
 # define colors for samples 
 sample_class2_colorz <- c("tan biofilm" = "#17174a", 
@@ -164,12 +164,12 @@ cc_plot <- model_output %>%
 model_table_CC <- model_output %>%
   select(sample_fraction_coded, sample_class2, ipl, fL_CC) %>%
   pivot_wider(names_from = "ipl", values_from = "fL_CC")
-write_csv(model_table_CC, "../data/supplemental_data/TableS5_fL_CC.csv")
+write_csv(model_table_CC, "data/supplemental_data/TableS5_fL_CC.csv")
 
 model_table_WL <- model_output %>%
   select(sample_fraction_coded, sample_class2, ipl, fL_WL) %>%
   pivot_wider(names_from = "ipl", values_from = "fL_WL")
-write_csv(model_table_WL, "../data/supplemental_data/TableS6_fL_rACoA.csv")
+write_csv(model_table_WL, "data/supplemental_data/TableS6_fL_rACoA.csv")
 
 ##### Other code #####
 
@@ -252,7 +252,7 @@ full_interactive_model <- htmltools::browsable(
   ))
 )
 
-htmltools::save_html(full_interactive_model, "../figures/final_figures/full_interactive_fL_model.html")
+htmltools::save_html(full_interactive_model, "figures/final_figures/full_interactive_fL_model.html")
 
 
 

@@ -16,7 +16,7 @@
 
 ##### load packages and data #####
 pacman::p_load(tidyverse, plotly, broom, ggdendro, RColorBrewer, ggpubr)
-irms_stds <- read_csv("../data/irms_standards.csv")
+irms_stds <- read_csv("data/irms_standards.csv")
 
 ##### IRMS tank values conversion #####
 

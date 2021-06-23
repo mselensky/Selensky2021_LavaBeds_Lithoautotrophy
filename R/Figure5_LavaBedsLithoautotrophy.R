@@ -23,11 +23,11 @@
 
 pacman::p_load(tidyverse, broom, ggdendro, ggpubr, ggtree, treeio)
 
-yield_plus_d13C <- read_csv("../data/ipl_yield_plus_d13C.csv") # from Figure4_LavaBedsLithoautotrophy.R
-ipl_rel_abun <- read_csv("../data/ipl_rel_abun.csv")
-ipl_ug_g_tle <- read_csv("../data/ipl_abun_table_ug_g_tle.csv")
-sample_metadata <- read_csv("../data/sample_metadata.csv")
-ipl_metadata <- read_csv("../data/ipl_metadata.csv") %>%
+yield_plus_d13C <- read_csv("data/ipl_yield_plus_d13C.csv") # from Figure4_LavaBedsLithoautotrophy.R
+ipl_rel_abun <- read_csv("data/ipl_rel_abun.csv")
+ipl_ug_g_tle <- read_csv("data/ipl_abun_table_ug_g_tle.csv")
+sample_metadata <- read_csv("data/sample_metadata.csv")
+ipl_metadata <- read_csv("data/ipl_metadata.csv") %>%
   rename(ipl_fullname = ipl)
 
 # color palette data for plotting
@@ -139,7 +139,7 @@ datatable <- bubble_plot_data %>%
   rename(sample_type = sample_class2) %>%
   arrange(desc(sample_type)) %>%
   pivot_wider(names_from = "ipl", values_from = "d13C_plus_se")
-write_csv(datatable, "../data/supplemental_data/TableS4_irms_d13C.csv")
+write_csv(datatable, "data/supplemental_data/TableS4_irms_d13C.csv")
 ##### plotting #####
 
 # plot `sample_fraction` dendrogram

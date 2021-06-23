@@ -24,10 +24,10 @@
 pacman::p_load(tidyverse, ggpubr, RColorBrewer, ggdendro, plotly, ggtree, treeio, vegan, ggrepel)
 
 # load data
-ipl_ug_g_tle <- read_csv("../data/ipl_abun_table_ug_g_tle.csv")
-ipl_rel_abun <- read_csv("../data/ipl_rel_abun.csv")
-sample_metadata <- read_csv("../data/sample_metadata.csv")
-ipl_metadata <- read_csv("../data/ipl_metadata.csv")
+ipl_ug_g_tle <- read_csv("data/ipl_abun_table_ug_g_tle.csv")
+ipl_rel_abun <- read_csv("data/ipl_rel_abun.csv")
+sample_metadata <- read_csv("data/sample_metadata.csv")
+ipl_metadata <- read_csv("data/ipl_metadata.csv")
 
 # color palette data for plotting
 sample_class2_colors <- c("tan biofilm" = "#17174a", 
